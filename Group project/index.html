@@ -3,37 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>retro game house</title>
-    <link rel="stylesheet" href="retrogames.css">
-    <script src="app.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <title>Retro Game House - Hall of Fame</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img src="icons/buttons-svgrepo-com.svg" alt="Retro Game House Logo" class="Logo">
-        <button id ="LoginBtn">Kirjaudu</button>
+        <div class="logo">Retro Game House</div>
+        <button class="login-button">Kirjaudu</button>
     </header>
 
     <main>
-        <h1>Hall of Fame</h1>
-
-        
-        <div id="GameList">
-            <!-- Pelit lisätään tähän javascriptil -->
+        <h1 class="main-heading">Hall of Fame</h1>
+        <div class="search-container">
+            <input type="text" id="gameSearch" placeholder="Etsi pelejä..." />
         </div>
-
-        <div id="pagination">
-             <!-- Sivutus lisätään tähän javascriptil -->
-        </div>
+        <div id="game-list" class="game-list"></div>
+        <div id="pagination" class="pagination"></div>
     </main>
 
+    <footer>
+        <p>&copy; 2024 Retro Game House | Tekijät: Figo, Hieu, Toivo | Koulu: Business College Helsinki</p>
+    </footer>
 
-        <footer>
-            <p>Tekijät: Hieu, Figo, Toivoo</p>
-            <p>Koulu: Business College OY</p>
-            <p>&copy; 2024 Retro Game House</p>
-        </footer>
-
-
+    <script src="data.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

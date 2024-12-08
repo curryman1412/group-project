@@ -3,34 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>retro game house</title>
-    <link rel="stylesheet" href="retrogames.css">
-    <script src="app.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <title>Retro Game House - Peli</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="game.js"></script>
 </head>
 <body>
     <header>
-        <img src="icons/buttons-svgrepo-com.svg" alt="Retro Game House Logo" class="Logo">
-        <button id ="LoginBtn">Kirjaudu</button>
-    </header>
-
-
-    <main>
-        <h1 id="gameName">Pelin nimi</h1>
-        <img id="gameImage" src="" alt="Pelin kuva" class="game-image">
-        <div id="highScores">
-            <!-- Parhaat tulokset listataan tähän -->
+        <div class="header-container">
+            <h1><a href="index.html" class="header-link">Retro Game House</a></h1>
+            <button>Kirjaudu</button>
         </div>
+    </header>
+    <main>
+        <section class="game-details">
+            <h2 id="game-title"></h2>
+            <img id="game-image" src="" alt="Pelin kuva">
+            <p id="game-description" class="game-description"></p>
+        </section>
+        <section>
+            <input type="text" id="playerSearch" placeholder="Etsi pelaajia...">
+            <table id="score-table" class="score-table">
+                <thead>
+                    <tr>
+                        <th>Sijoitus</th>
+                        <th>Käyttäjänimi</th>
+                        <th>Tulos</th>
+                        <th>Päivämäärä</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
     </main>
-
-
-        <footer>
-            <p>Tekijät: Hieu, Figo, Toivoo</p>
-            <p>Koulu: Business College OY</p>
-            <p>&copy; 2024 Retro Game House</p>
-        </footer>
-        
-    
-    
+    <footer>
+        <p>&copy; 2024 Retro Game House | Tekijät: Figo, Hieu, Toivo | Koulu: Business College Helsinki</p>
+    </footer>
 </body>
 </html>
