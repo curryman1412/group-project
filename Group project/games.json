@@ -2,7 +2,7 @@
     "games": [
       {
         "ID": 1,
-        "game_image": "",
+        "game_image": "kuvii/oregoninpolku.jpg",
         "game_name": {
           "en": "The Oregon Trail",
           "fi": "Oregonin Polku"
@@ -129,7 +129,7 @@
       },
       {
         "ID": 2,
-        "game_image": "",
+        "game_image": "kuvii/pac_man.jpg",
         "game_name": {
           "en": "Pac-Man",
           "fi": "Pac-Man"
@@ -166,7 +166,7 @@
       },
       {
         "ID": 3,
-        "game_image": "",
+        "game_image": "kuvii/space_invaders.jpg",
         "game_name": {
           "en": "Space Invaders",
           "fi": "Space Invaders"
@@ -203,7 +203,7 @@
       },
       {
         "ID": 4,
-        "game_image": "",
+        "game_image": "kuvii/donkey_kong.jpg",
         "game_name": {
           "en": "Donkey Kong",
           "fi": "Donkey Kong"
@@ -240,7 +240,7 @@
       },
       {
         "ID": 5,
-        "game_image": "",
+        "game_image": "kuvii/asteroids.jpg",
         "game_name": {
           "en": "Asteroids",
           "fi": "Asteroids"
@@ -277,7 +277,7 @@
       },
       {
         "ID": 6,
-        "game_image": "",
+        "game_image": "kuvii/defender.jpg",
         "game_name": {
           "en": "Defender",
           "fi": "Defender"
@@ -314,7 +314,7 @@
       },
       {
         "ID": 7,
-        "game_image": "",
+        "game_image": "kuvii/ms_pac_man.jpg",
         "game_name": {
           "en": "Ms. Pac-Man",
           "fi": "Ms. Pac-Man"
@@ -351,7 +351,7 @@
       },
       {
         "ID": 8,
-        "game_image": "",
+        "game_image": "kuvii/centipede.jpg",
         "game_name": {
           "en": "Centipede",
           "fi": "Centipede"
@@ -388,7 +388,7 @@
       },
       {
         "ID": 9,
-        "game_image": "",
+        "game_image": "kuvii/galaga.jpg",
         "game_name": {
           "en": "Galaga",
           "fi": "Galaga"
@@ -425,7 +425,7 @@
       },
       {
         "ID": 10,
-        "game_image": "",
+        "game_image": "kuvii/frogger.jpg",
         "game_name": {
           "en": "Frogger",
           "fi": "Frogger"
@@ -462,7 +462,7 @@
       },
       {
         "ID": 11,
-        "game_image": "",
+        "game_image": "kuvii/joust.jpg",
         "game_name": {
           "en": "Joust",
           "fi": "Joust"
@@ -499,7 +499,7 @@
       },
       {
         "ID": 12,
-        "game_image": "",
+        "game_image": "kuvii/qbert.jpg",
         "game_name": {
           "en": "Q*bert",
           "fi": "Q*bert"
@@ -536,7 +536,7 @@
       },
       {
         "ID": 13,
-        "game_image": "",
+        "game_image": "kuvii/tron.jpg",
         "game_name": {
           "en": "Tron",
           "fi": "Tron"
@@ -573,7 +573,7 @@
       },
       {
         "ID": 14,
-        "game_image": "",
+        "game_image": "kuvii/burgertime.jpg",
         "game_name": {
           "en": "BurgerTime",
           "fi": "BurgerTime"
@@ -610,7 +610,7 @@
       },
       {
         "ID": 15,
-        "game_image": "",
+        "game_image": "kuvii/dig_dug.jpg",
         "game_name": {
           "en": "Dig Dug",
           "fi": "Dig Dug"
@@ -647,7 +647,7 @@
       },
       {
         "ID": 16,
-        "game_image": "",
+        "game_image": "kuvii/tempest.jpg",
         "game_name": {
           "en": "Tempest",
           "fi": "Tempest"
@@ -684,7 +684,7 @@
       },
       {
         "ID": 17,
-        "game_image": "",
+        "game_image": "kuvii/2084_hero.jpg",
         "game_name": {
           "en": "Robotron: 2084",
           "fi": "Robotron: 2084"
@@ -721,7 +721,7 @@
       },
       {
         "ID": 18,
-        "game_image": "",
+        "game_image": "kuvii/zaxxon.jpg",
         "game_name": {
           "en": "Zaxxon",
           "fi": "Zaxxon"
@@ -758,7 +758,7 @@
       },
       {
         "ID": 19,
-        "game_image": "",
+        "game_image": "kuvii/gauntlet.jpg",
         "game_name": {
           "en": "Gauntlet",
           "fi": "Gauntlet"
@@ -795,7 +795,7 @@
       },
       {
         "ID": 20,
-        "game_image": "",
+        "game_image": "kuvii/bubblebobble.jpg",
         "game_name": {
           "en": "Bubble Bobble",
           "fi": "Bubble Bobble"
@@ -832,7 +832,7 @@
       },
       {
         "ID": 21,
-        "game_image": "",
+        "game_image": "kuvii/double_dragon.jpg",
         "game_name": {
           "en": "Double Dragon",
           "fi": "Double Dragon"

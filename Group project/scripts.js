@@ -1,21 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const games = JSON.parse(localStorage.getItem("games")) || [];
+    const games = JSON.parse(localStorage.getItem("games"));
     const gameList = document.getElementById("game-list");
     const pagination = document.getElementById("pagination");
     const searchInput = document.getElementById("gameSearch");
 
     const itemsPerPage = 20;
     let currentPage = 1;
-    let filteredGames = [...games]; // Clone the games array initially.
 
-    // Function to display the games
     const displayGames = (gamesToShow) => {
-        gameList.innerHTML = ""; // Clear the current list
-        if (gamesToShow.length === 0) {
-            gameList.innerHTML = `<p>No games found.</p>`;
-            return;
-        }
-
+        gameList.innerHTML = "";
         gamesToShow.forEach((game) => {
             const div = document.createElement("div");
             div.className = "game-item";
@@ -36,42 +29,32 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 
-    // Function to handle pagination
     const paginate = () => {
-        pagination.innerHTML = ""; // Clear existing pagination buttons
-        const totalPages = Math.ceil(filteredGames.length / itemsPerPage);
-
+        const totalPages = Math.ceil(games.length / itemsPerPage);
+        pagination.innerHTML = "";
         for (let i = 1; i <= totalPages; i++) {
             const button = document.createElement("button");
             button.textContent = i;
-            button.className = i === currentPage ? "active" : "";
             button.addEventListener("click", () => {
                 currentPage = i;
-                const start = (currentPage - 1) * itemsPerPage;
-                const end = start + itemsPerPage;
-                displayGames(filteredGames.slice(start, end));
+                displayGames(games.slice((i - 1) * itemsPerPage, i * itemsPerPage));
             });
             pagination.appendChild(button);
         }
     };
 
-    // Search functionality
     searchInput.addEventListener("input", debounce((e) => {
-        const query = e.target.value.toLowerCase();
-        filteredGames = games.filter(game =>
-            game.game_name.fi?.toLowerCase().includes(query)
+        const filteredGames = games.filter(game =>
+            game.game_name.fi.toLowerCase().includes(e.target.value.toLowerCase())
         );
-        currentPage = 1; // Reset to the first page
         displayGames(filteredGames.slice(0, itemsPerPage));
         paginate();
     }, 300));
 
-    // Initial display
-    displayGames(filteredGames.slice(0, itemsPerPage));
+    displayGames(games.slice(0, itemsPerPage));
     paginate();
 });
 
-// Debounce function to optimize search
 function debounce(func, wait) {
     let timeout;
     return function (...args) {

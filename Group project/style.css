@@ -18,7 +18,7 @@ header {
 
 .header-link {
     text-decoration: none;
-    color: #000;
+    color: #ffff;
     font-family: 'Kanit', sans-serif;
     font-weight: 600;
     font-size: 35px;
@@ -40,6 +40,12 @@ footer {
     font-size: 35px;
     text-align: center;
     margin: 1rem 0;
+}
+
+.sub-heading {
+    font-size: 29px;
+    text-align: center;
+    font-weight: 100;
 }
 
 .search-container {
@@ -69,8 +75,8 @@ footer {
 }
 
 .game-item img, #game-image {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: auto;
 }
 
 .pagination {
@@ -91,7 +97,7 @@ footer {
     font-weight: bold;
 }
 
-/* Korostus parhaimmille */
+
 .gold {
     background-color: rgba(255, 223, 0, 0.3);
     font-weight: bold;
@@ -107,7 +113,7 @@ footer {
     font-weight: bold;
 }
 
-/* Yleinen tyyli */
+
 .score-table {
     width: 100%;
     border-collapse: collapse;
@@ -142,4 +148,31 @@ footer {
     font-size: 17px;
     line-height: 1.6;
     color: #000;
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.game-item { 
+    width: 400px;
+    text-align: center;
+    background-color:  #F3F3F3;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.header-logo {
+    width: 150px;
+    height: auto;
 }
